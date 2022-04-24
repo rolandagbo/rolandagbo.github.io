@@ -1,0 +1,238 @@
+body{
+    background-image: url(fond_jaune.png);
+}
+/* Début du header */
+header{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Dayrom serif;
+}
+nav li{
+    list-style: none;
+    padding-right: 25px;
+}
+nav{
+    display: flex; 
+    position: relative;
+    top: 4.5em;
+    font-size: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+header p{
+    position: relative;
+    bottom: 1em;
+    font-size: 20px;
+}
+header a:hover{
+    color: #760001;
+    border-bottom: #760001 3px solid;
+    transition: all .1s;
+}
+
+/* Fin du header */
+.separateur{
+    width: 100%;
+    height: 3px;
+    position: relative;
+    bottom: 2.5em;
+}
+/* Début de la description */
+.sanfr{
+    width: 95%;
+    margin: auto;
+    background-image: url(sanfrancisco.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 257px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 2em;
+}
+.btn{
+    background-image: url(fond_degraderouge.png);
+    background-position: center;
+    width: 125px;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 13px;
+
+}
+.desc{
+    background-color: rgba(24,24,24,0.8);
+    border-radius: 0px 0px 5px 5px;
+    color: white;
+    padding: 0px 8px 0px 8px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 13em;
+}
+/* Fin de la description */
+
+/* Début du contenu */
+
+section{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+aside{
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px 10px 10px;
+    text-align: justify;
+    text-align: center;
+    width: 20%;
+    height: 415px;
+    position: absolute;
+    right: 40px;
+}
+aside .rs img{
+    padding-right: 5px;
+}
+article{
+    padding-right: 8px;
+    width: 75%;
+    text-align: justify;
+    
+}
+aside p{
+    text-align: justify;
+}
+.rs{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 20px;
+}
+
+/* Fin du contenu */
+.separateur2{
+    width: 100%;
+    height: 3px;
+}
+.bulle{
+position: relative;
+left: 60.1em;
+bottom: 18em;;
+}
+.icotop{
+    position: relative;
+    left: 38em;
+    bottom: 10px;
+}
+/* Début du footer */
+footer h5{
+    font-weight: lighter;
+}
+footer{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+footer li{
+    list-style: url(ico_liensexterne.png);
+    color: #760001;
+}
+footer img{
+    border: 1px solid #181818;
+    margin-left: 6px;
+}
+.li{
+    display: flex;
+}
+.amis{
+    margin-right: 8em;
+}
+
+/* Fin du footer */
+
+/* Début du responsive design */
+@media (orientation:portrait) {
+    header nav{
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+    .sanfr{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+        position: relative;
+        bottom: 50px;
+    }
+    article{
+        width: 90%;
+        margin: auto;
+    }
+    aside{
+        width: 80%;
+        margin: auto;
+        position: relative;
+       bottom: 0;
+       left: 0;
+    }
+    footer{
+        text-align: center;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .icotop{
+        display: none;
+    }
+    footer li{
+        position: relative;
+        left: 3em;
+    }
+}
+@media screen and (max-width: 1060px){
+    header nav{
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+    .sanfr{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+        position: relative;
+        bottom: 50px;
+    }
+    article{
+        width: 90%;
+        margin: auto;
+    }
+    aside{
+        width: 80%;
+        margin: auto;
+        position: relative;
+       bottom: 0;
+       left: 0;
+    }
+    aside p{
+        text-align: center;
+    }
+    .bulle{
+        display: none;
+    }
+}
+
+/* Fin du responsive design */
